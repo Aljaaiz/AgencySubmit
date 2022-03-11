@@ -38,10 +38,9 @@ nav ul li {
   display: inline-block;
   padding: 0 15px;
 }
-nav ul li:last-child {
+nav .btn {
   background: var(--light-green);
-  padding: 15px 15px;
-  border-radius: 5px;
+  padding: 15px 25px;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -604,13 +603,17 @@ footer ul li a {
   cursor: pointer;
 }
 .mobile-menu-list {
+  overflow-x: hidden;
   background: #000;
   position: absolute;
   color: #fff;
   top: 100px;
+  height: 100vh;
+  padding: 50px;
   /* left: 40px; */
 }
 .mobile-menu-list ul li {
+  cursor: pointer;
   display: block;
   padding: 10px 0;
 }
@@ -634,9 +637,12 @@ nav button {
 #savemy-sit button {
   margin: 0 auto;
   display: block;
-  padding: 15px 150px;
+  padding: 15px 100px;
   border: none;
   border-radius: 0;
+}
+#savemy-sit a {
+  text-decoration: none;
 }
 /* .mobile-menu-list ul li:last-child {
   display: block;
