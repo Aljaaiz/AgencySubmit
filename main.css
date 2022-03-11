@@ -48,9 +48,9 @@ nav ul li:last-child {
 nav ul li:last-child:hover {
   opacity: 0.9;
 }
-nav ul li:last-child a {
+/* nav ul li:last-child a {
   color: rgb(0, 0, 0);
-}
+} */
 nav ul li a {
   text-decoration: none;
   color: #ffff;
@@ -181,7 +181,7 @@ header h1 {
   font-family: "Roboto", "sanserif";
 }
 #early {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 .text-center {
   text-align: center;
@@ -577,3 +577,69 @@ footer ul li a {
     display: none;
   }
 }
+@media screen and (min-width: 720px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+/* Mobile nav */
+#mobile-menu.active {
+  display: block;
+}
+#mobile-menu {
+  display: none;
+  position: fixed;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#close {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  cursor: pointer;
+}
+.mobile-menu-list {
+  background: #000;
+  position: absolute;
+  color: #fff;
+  top: 100px;
+  /* left: 40px; */
+}
+.mobile-menu-list ul li {
+  display: block;
+  padding: 10px 0;
+}
+
+nav button {
+  display: block;
+  background: var(--light-green);
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#savemy-sit {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background: rgb(216, 216, 216);
+}
+#savemy-sit button {
+  margin: 0 auto;
+  display: block;
+  padding: 15px 150px;
+  border: none;
+  border-radius: 0;
+}
+/* .mobile-menu-list ul li:last-child {
+  display: block;
+  text-align: center;
+  margin-top: 300px;
+} */
