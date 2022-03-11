@@ -8,6 +8,7 @@ hamburger.addEventListener('click', () => {
 })
 closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('active')
+    window.location.reload()
 })
 mobile_list.forEach((item) => {
     item.addEventListener('click', function () {
